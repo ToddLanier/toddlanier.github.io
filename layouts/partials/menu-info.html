@@ -1,20 +1,26 @@
 <menu>
     <div class="page">
-          {{ with .GetPage "info" }}
-                   {{ .TableOfContents }}
-            {{ end }}
 
-{{ $contactPage := site.GetPage "contact" }}
-{{ if and $contactPage (not $contactPage.Draft) }}
-  <a href="{{ $contactPage.RelPermalink }}">contact</a>
-{{ end }}
+                   {{ .TableOfContents }}
 
     </div>
 
 
     <div class="list-summary">
+
+
+<a href="#">cv</a>
+<a href="#">artist safety profile</a>
+<a href="#">exquisite corpse (hiv) traveling exhibition 
+</a>
+        {{ $contactPage := site.GetPage "contact" }}
+{{ if and $contactPage (not $contactPage.Draft) }}
+  <a href="{{ $contactPage.RelPermalink }}">contact</a>
+{{ end }}
+<a href="{{ $contactPage.RelPermalink }}">contact</a>
+
           {{ with .GetPage "info" }}
-                <p>{{ .Params.summary }}</p>
+                <p>{{ .Summary }}</p>
             {{ end }}
 
     </div>

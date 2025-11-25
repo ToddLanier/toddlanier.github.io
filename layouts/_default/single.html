@@ -1,26 +1,26 @@
 {{ define "main" }}
+    {{ if eq .Type "contact" }}
+        <div class="contact">
+            {{ .Content }}
+            {{ partial "contact.html" . }}
+        </div>
+    {{ else }}
 
     {{- partial "menu.html" . -}}
 
-<div class="content">
+    <div class="content">
+        POOP
+        {{ if and (isset .Params "image") .Params.image }}
+            {{ $image := .Page.Resources.GetMatch .Params.image }}
+                {{ with $image }}
+                    {{ $thumb := .Resize "1000x" }}
+                    {{ printf `<img src="%s" alt="%s">` $thumb.RelPermalink .Title | safeHTML }}
+                {{ end }}
+        {{ end }}
 
-{{ if and (isset .Params "image") .Params.image }}
-    {{ $image := .Page.Resources.GetMatch .Params.image }}
-    {{ with $image }}
-        {{ $thumb := .Resize "1000x" }}
-        {{ printf `<img src="%s" alt="%s" >` $thumb.RelPermalink .Title | safeHTML }}
-    {{end}}
-{{ end }}
+        {{ .Content }}
 
-{{ .Content }}
+    </div>
 
-    {{ if eq .Type "contact" }}
-        {{ partial "contact.html" . }}
     {{ end }}
-
-
-
-</div>
-
-
 {{ end }}

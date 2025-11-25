@@ -1,67 +1,64 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}">
-
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>{{ .Site.Title }} 
-      {{ if not .IsHome }}
-  - {{ .LinkTitle }}
-  {{ end }}
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{{ .Site.Title }} 
+    {{ if not .IsHome }}
+    - {{ .LinkTitle }}
+    {{ end }}
     </title>
-  {{ with .Site.Params.description }}
-  <meta name="description" content="{{ . }}">{{ end }}
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="{{ relURL "font.css" }} ">
+    {{ with .Site.Params.description }}
+    <meta name="description" content="{{ . }}">{{ end }}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ relURL "font.css" }} ">
     <link rel="stylesheet" href="{{ relURL "style.css" }} ">
-     <link rel="stylesheet" href="{{ relURL "contact.css" }} ">
-  {{ `
-  <!--[if lt IE 9]>
-          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-      <![endif]-->
-  ` | safeHTML }}
-
-  {{- partial "favicon.html" . -}}
-  {{ with .OutputFormats.Get "RSS" }}
-  {{ printf `
-  <link href="%s" rel="%s" type="%s" title="%s" />` .Permalink .Rel .MediaType.Type $.Site.Title | safeHTML }}
-  {{ end }}
-  {{- partial "opengraph.html" . -}}
-  {{- partial "twitter_cards.html" . -}}
-  {{ template "_internal/google_analytics.html" . }}
-
-  {{- partial "head.html" . -}}
+    <link rel="stylesheet" href="{{ relURL "contact.css" }} ">
+    {{ `
+    <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+            <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    ` | safeHTML }}
+    {{- partial "favicon.html" . -}}
+    {{ with .OutputFormats.Get "RSS" }}
+    {{ printf `
+    <link href="%s" rel="%s" type="%s" title="%s" />` .Permalink .Rel .MediaType.Type $.Site.Title | safeHTML }}
+    {{ end }}
+    {{- partial "opengraph.html" . -}}
+    {{- partial "twitter_cards.html" . -}}
+    {{ template "_internal/google_analytics.html" . }}
+    {{- partial "head.html" . -}}
 </head>
 <body>
     {{- partial "header.html" . -}}
-    <main>
-        {{ block "main" . }}
-        {{ end }}
-    </main>
+        <main>
+            {{ block "main" . }}
+            {{ end }}
+        </main>
     {{ partial "footer.html" . }}
 </body>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-        const currentPath = window.location.pathname;
-        const bodyElement = document.body; // or document.documentElement for <html>
-        if (currentPath === '/') {
-            bodyElement.classList.toggle('home');
-            } else if (currentPath === '/info/') {
-            bodyElement.classList.toggle('info-mode');
-            } else if (currentPath === '/projects/el-mejor-karate/') {
-            bodyElement.classList.toggle('emk-mode');
-            } else if (currentPath === '/projects/freedimensional/') {
-            bodyElement.classList.toggle('fd-mode');
-            } else if (currentPath === '/projects/lanchonete/') {
-            bodyElement.classList.toggle('lanch-mode');
-            } else if (currentPath === '/projects/luv-til-it-hurts/') {
-            bodyElement.classList.toggle('luv-mode');
-            } else if (currentPath === '/projects/farm-school/') {
-            bodyElement.classList.toggle('fs-mode');
-            } else if (currentPath === '/projects/my-art-world/') {
-            bodyElement.classList.toggle('maw-mode');
-            }
-        });
+            const currentPath = window.location.pathname;
+            const bodyElement = document.body;
+                if (currentPath === '/') {
+                    bodyElement.classList.toggle('home');
+                    } else if (currentPath === '/info/' || currentPath === '/contact/' ) {
+                    bodyElement.classList.toggle('info-mode');
+                    } else if (currentPath === '/projects/el-mejor-karate/') {
+                    bodyElement.classList.toggle('emk-mode');
+                    } else if (currentPath === '/projects/freedimensional/') {
+                    bodyElement.classList.toggle('fd-mode');
+                    } else if (currentPath === '/projects/lanchonete/') {
+                    bodyElement.classList.toggle('lanch-mode');
+                    } else if (currentPath === '/projects/luv-til-it-hurts/') {
+                    bodyElement.classList.toggle('luv-mode');
+                    } else if (currentPath === '/projects/farm-school/') {
+                    bodyElement.classList.toggle('fs-mode');
+                    } else if (currentPath === '/projects/my-art-world/') {
+                    bodyElement.classList.toggle('maw-mode');
+                    }
+                });
     </script>
 </html>

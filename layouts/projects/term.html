@@ -9,6 +9,7 @@
         </div>
 
         <div class="list-summary">
+
             {{ with .GetPage "summary" }}
             <div>{{ .Content }}</div>
             {{ end }}
@@ -51,8 +52,20 @@
         {{/*  <h1>{{ .Page.Title }}</h1>  */}}
         {{ if .Params.image.src }}
 
+        {{ $path := "" }}
+  {{ with .File }}
+        {{ $path = .Path }}
+  {{ else }}
+        {{ $path = .Path }}
+  {{ end }}
+
+
  
-           <img src="{{ .Params.image.src }}" alt="{{ .Page.Title }} - Logo">
+            <div class="{{ path.Base (path.Split $path).Dir }}">
+                 <img src="{{ .Params.image.src }}" alt="{{ .Page.Title }} - Logo" >
+            </div>
+
+          
 
         {{ end }}
         {{ .Content }}
