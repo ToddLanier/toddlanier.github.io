@@ -17,7 +17,7 @@
 {{ if and $contactPage (not $contactPage.Draft) }}
   <a href="{{ $contactPage.RelPermalink }}">contact</a>
 {{ end }}
-<a href="{{ $contactPage.RelPermalink }}">contact</a>
+
 
           {{ with .GetPage "info" }}
                 <p>{{ .Summary }}</p>
