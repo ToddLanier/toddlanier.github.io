@@ -9,7 +9,7 @@
     {{- partial "menu.html" . -}}
 
     <div class="content">
-        POOP
+
         {{ if and (isset .Params "image") .Params.image }}
             {{ $image := .Page.Resources.GetMatch .Params.image }}
                 {{ with $image }}
