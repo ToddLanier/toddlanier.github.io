@@ -17,4 +17,4 @@ I make new forms. freeDimensional was both a framework for me to meet other thin
 
 I have tried to keep up with all the initiatives and institutions impacted by the freeDimensional idea. I have tried to make a work that responds to the safety needs of artists around the world.
 
-[Archive](https://artistsafety.tllester.info)
+[Artist Safety Archive](https://artistsafety.tllester.info)

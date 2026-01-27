@@ -9,5 +9,5 @@ TZ = "TZ=America/Mexico_City"
 publish = "public"
 command = """\
   git config core.quotepath false && \
-  hugo --gc --minify --baseURL "https://tllester.info/"
+  hugo --gc --minify --baseURL "${baseURL}"
   """
