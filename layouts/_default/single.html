@@ -4,6 +4,11 @@
             {{ .Content }}
             {{ partial "contact.html" . }}
         </div>
+            {{/*  {{ else if eq .Type "search" }}
+        <div class="search">
+            {{ .Content }}
+            {{ partial "search.html" . }}
+        </div>  */}}
     {{ else }}
 
     {{- partial "menu.html" . -}}

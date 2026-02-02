@@ -1,13 +1,20 @@
 :root {
     --global-font-size: 16px;
-    --global-font-color: #444;
-    /* --mono-font-stack: Roboto Mono, "Fira Sans", "Droid Sans",
-        Courier New, monospace, serif;
-    --font-stack: Roboto Mono, "Fira Sans", "Droid Sans", Courier New, monospace,
-        serif; */
     --global-line-height: 1.6em;
     --page-width: 70em;
     --display-h1-decoration: 1;
+
+    --pagefind-ui-scale: 1;
+--pagefind-ui-primary: #ffffff;
+--pagefind-ui-text: #000000;
+--pagefind-ui-background: #ffffff;
+--pagefind-ui-border: #eeeeee;
+--pagefind-ui-tag: #eeeeee;
+--pagefind-ui-border-width: 2px;
+--pagefind-ui-border-radius: 8px;
+--pagefind-ui-image-border-radius: 8px;
+--pagefind-ui-image-box-ratio: 3 / 2;
+--pagefind-ui-font: sans-serif;
 }
 
 html {
@@ -35,6 +42,19 @@ body {
 header{
     width: 100%;
     margin: 0 0 1em 0;
+    
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-start;;
+    justify-content: space-between;
+}
+
+.header-title {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+
 }
 
 header a:link,
