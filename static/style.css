@@ -221,6 +221,11 @@ menu .list-project a {
     flex-direction: column;
 }
 
+.pagefind-ui__search-input {
+    border: 1px solid black !important;
+    border-radius: 0 !important;
+}
+
 audio {
     float: right;
     width: 70%;
