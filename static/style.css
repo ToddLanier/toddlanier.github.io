@@ -271,7 +271,7 @@ body.fs-mode {
 }
 
 body.maw-mode {
-    background-image: url('bg/background-maw.svg');
+    background-color: #4ab4e7;
     background-size: cover;
     background-position: center;
 }
