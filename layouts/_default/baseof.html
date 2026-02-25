@@ -44,8 +44,10 @@
             const bodyElement = document.body;
                 if (currentPath === '/') {
                     bodyElement.classList.toggle('home');
-                    } else if (currentPath === '/info/' || currentPath === '/contact/' ) {
+                    } else if (currentPath === '/info/' ) {
                     bodyElement.classList.toggle('info-mode');
+                    } else if (currentPath === '/contact/') {
+                    bodyElement.classList.toggle('contact-mode');
                     } else if (currentPath === '/projects/el-mejor-karate/') {
                     bodyElement.classList.toggle('emk-mode');
                     } else if (currentPath === '/projects/freedimensional/') {
@@ -58,7 +60,7 @@
                     bodyElement.classList.toggle('fs-mode');
                     } else if (currentPath === '/projects/my-art-world/') {
                     bodyElement.classList.toggle('maw-mode');
-                    }
+                    } 
                 });
     </script>
 </html>

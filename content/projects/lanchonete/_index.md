@@ -2,7 +2,7 @@
 title: Lanchonete(.)org
 date: 2015-07-16T05:00:00.000Z
 image:
-  src: /uploads/lanchonete.jpg
+  src: /uploads/lanchonete.png
 ---
 
 For five years Lanchonete.org (2013-18) occupies a small bar on a denigrated yet swiftly gentrifying street in the center of São Paulo as nucleus for artist and urbanist residencies, community meals, open courses, concerts, murals, public health campaigns and a radio station.

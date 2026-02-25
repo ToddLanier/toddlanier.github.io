@@ -199,12 +199,7 @@ audio {
     height: 120px;
 }
 
-.luv-til-it-hurts {
-    width: 100%;
-    margin: 0 auto;
-    background-color: #ee1c26;
-    text-align: center;
-}
+
 
 /* CONTACT */
 
@@ -240,28 +235,29 @@ body.info-mode {
     background-position: center;
 }
 
+body.contact-mode {
+    background-color: #24d324;
+}
+
+
 body.fd-mode {
-    background-image: url('bg/background-fd.svg');
-    background-size: cover;
-    background-position: center;
+    background-color: #cbe5ff;
 }
 
 body.lanch-mode {
-    background-image: url('bg/background-lanch.svg');
-    background-size: cover;
-    background-position: center;
+    background-color: #382f89;
+}
+
+body.lanch-mode header *, body.lanch-mode footer{
+    color: white;
 }
 
 body.luv-mode {
-    background-image: url('bg/background-luv.svg');
-    background-size: cover;
-    background-position: center;
+    background-color: #cf2e2e;
 }
 
-body.luv-mode .content img {
-    background-image: url('bg/background-luv.svg');
-    background-size: cover;
-    background-position: center;
+body.luv-mode header *, body.luv-mode footer{
+    color: white;
 }
 
 body.fs-mode {
