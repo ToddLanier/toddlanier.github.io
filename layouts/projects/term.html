@@ -3,7 +3,6 @@
     {{- partial "menu-project.html" . -}}
 
 <div class="project-content">
-    <h1>{{ .Title }}</h1>
             <div class="project-boxes">
             {{ $projectName := path.Base .RelPermalink }}
             {{ $sectionDir := printf "posts/%s/" $projectName }}
