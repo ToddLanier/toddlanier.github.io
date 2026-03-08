@@ -9844,7 +9844,7 @@ snapshots:
 
   node-fetch@2.7.0:
     dependencies:
-      whatwg-external_url: 5.0.0
+      whatwg-url: 5.0.0
 
   node-int64@0.4.0: {}
 
