@@ -2,6 +2,6 @@
 title: primary micro site
 order: 01
 image:
-  src: /uploads/purple logo (w/ .org version from wallpaper)
-external_url: micro site
+  src: /uploads/lanchonete-logo-purple.png
+external_url: https://luv.tllester.info/til-it-hurts/
 ---

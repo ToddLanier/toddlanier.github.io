@@ -218,7 +218,7 @@ menu .list-project a {
     justify-content: center;
       background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+    background-size: auto;
 }
 
 .content ol li {
