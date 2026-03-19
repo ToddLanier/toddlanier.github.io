@@ -1,5 +1,5 @@
 ---
-title: fd story
+title: fD story
 order: 2
 image:
   src: /uploads/fd-story.png

@@ -1,5 +1,5 @@
 ---
-title: artist safety hosting guide
+title: Artist Safety Hosting
 order: 9
 image:
   src: /uploads/Artist-Safety-Hosting-Guide.png
