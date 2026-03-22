@@ -106,27 +106,24 @@ menu .list-summary {
     align-items: flex-start;
     flex-grow: 1;
     border-top: 1px solid;
-    padding: 10px 13px 0;
+    padding: 15px 16px 0;
     line-height: 1.4;
     height: 500px;
     overflow-y: auto;
 }
 
+menu .list-summary p {
+    margin-top: 0;
+    text-align: justify;
+}
+
+
 menu .list-summary a {
     margin-bottom: .5em;
 }
 
-/* menu .list-summary p {
-margin-top: .5em;
-} */
-
 menu .list-summary .post {
     margin-bottom: 1.3em;
-}
-
-menu .list-summary p {
-    margin-top: 1em;
-    text-align: justify;
 }
 
 menu .list-summary a {
