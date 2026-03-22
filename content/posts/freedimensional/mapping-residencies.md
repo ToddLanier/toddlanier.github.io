@@ -2,6 +2,6 @@
 title: AIR in Conflict Areas
 order: 3
 image: 
-  src: /uploads/mapping-residencies.png
-external_url: https://insituculture.eu/croatia-2024/summer-school-place-based-creative-solutions/
+  src: /uploads/03_goethe-green.png
+external_url: /uploads/goethe_circular_24-25_June_2011_v8.pdf
 ---
