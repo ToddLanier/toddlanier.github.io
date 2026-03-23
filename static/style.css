@@ -186,6 +186,7 @@ menu .list-project a {
     width: 890px;
     font-size: 18px;
     margin-left: 2em;
+    padding: 0 2em;
 }
 
 .project-boxes {
