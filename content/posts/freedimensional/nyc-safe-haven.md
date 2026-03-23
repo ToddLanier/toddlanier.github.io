@@ -1,5 +1,5 @@
 ---
-title: nyc safe haven
+title: NYC safe haven
 order: 6
 image:
   src: /uploads/nyc-artist-safe-haven.png

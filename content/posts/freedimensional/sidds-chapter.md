@@ -1,5 +1,5 @@
 ---
-title: sidd's chapter
+title: FD chapter
 order: 11
 image:
   src: /uploads/contemporary-perspectives-art-international-development.jpg

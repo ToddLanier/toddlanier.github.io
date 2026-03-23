@@ -1,5 +1,5 @@
 ---
-title: residents or participants (archive)
+title: artist residents (archive)
 order: 4
 image:
   src: /uploads/04-lanchonete-arquivo.png

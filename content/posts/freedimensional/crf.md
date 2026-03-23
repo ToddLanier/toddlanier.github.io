@@ -1,5 +1,5 @@
 ---
-title: CRF
+title: Creative Resistance Fund
 order: 5
 image:
   src: /uploads/crf.png

@@ -1,5 +1,5 @@
 ---
-title: can artist residency be activist?
+title: Can artist residency be activist?
 order: 12
 image:
   src: /uploads/can-artistresidency-be-activist.png

@@ -1,5 +1,5 @@
 ---
-title: primary micro site
+title: 'Lanchonete.org'
 order: 1
 image:
   src: /uploads/lanchonete-logo-purple.png

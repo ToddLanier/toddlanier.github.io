@@ -1,7 +1,7 @@
 ---
-title: mystery brochure
+title: 'Lanchonete.org @ São Paulo X Bienal de Arquitetura'
 order: 2
 image:
-  src: /uploads/thumbnail from mystery pamphlet
-external_url: a url will be created
+  src: /uploads/02-lanchonete-sprq-biennal.png
+external_url: https://lanchonete.tllester.info/lanchonete/pdfs/SPxBienal_Lanchonete_flier.pdf
 ---
