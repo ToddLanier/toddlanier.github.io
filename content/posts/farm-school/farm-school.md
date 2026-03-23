@@ -1,6 +1,6 @@
 ---
 title: FARM/SCHOOL
-order: 03
+order: 3
 image:
   src: /uploads/black and white logo
 external_url:
