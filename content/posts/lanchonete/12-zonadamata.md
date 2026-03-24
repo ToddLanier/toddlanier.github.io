@@ -1,5 +1,5 @@
 ---
-title: zona da mata
+title: Zona da Mata
 order: 12
 image:
   src: /uploads/08-lanchonete.png
