@@ -10,9 +10,19 @@
         {{ $filtered := where $sectionPages "Params.private" "!=" true }}
         {{ range sort $filtered "Params.order" "asc" }}
             {{ $pageURL := .Permalink }}
-            {{ if .Params.external_url }}
+            {{ if .Params.translations }}
+                    <div class="project-box project-box--multilingual" style="background-image: url('{{ .Params.image.src }}');" title="{{ .Title }}">
+                        <div class="project-box__overlay">
+                            {{ range .Params.translations }}
+                            <a class="project-box__lang" href="{{ .url }}" target="_blank" rel="noopener noreferrer">
+                                {{ .lang }}
+                            </a>
+                            {{ end }}
+                        </div>
+                    </div>
+            {{ else if .Params.external_url }}
                 {{ $pageURL = .Params.external_url }}
-                    <a class="project-box" style="background-image: url('{{ .Params.image.src }}');" href="{{ $pageURL }}" target="_blank" rel="noopener noreferrer" title="{{ .Title }}"> 
+                    <a class="project-box" style="background-image: url('{{ .Params.image.src }}');" href="{{ $pageURL }}" target="_blank" rel="noopener noreferrer" title="{{ .Title }}">
                         <div></div>
                     </a>
             {{ else if .Params.file.src }}

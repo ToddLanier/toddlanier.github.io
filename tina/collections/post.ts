@@ -42,6 +42,26 @@ const Post: Collection = {
       label: "External URL",
     },
     {
+      type: "object",
+      name: "translations",
+      label: "Translations",
+      list: true,
+      fields: [
+        {
+          type: "string",
+          name: "lang",
+          label: "Language Code",
+          required: true,
+        },
+        {
+          type: "string",
+          name: "url",
+          label: "URL",
+          required: true,
+        },
+      ],
+    },
+    {
       type: 'string',
       name: 'projects',
       label: 'Projects',
