@@ -186,6 +186,7 @@ menu .list-project a {
     width: 900px;
     font-size: 18px;
     margin-left: 2em;
+        overflow-y: auto;
 
 }
 
