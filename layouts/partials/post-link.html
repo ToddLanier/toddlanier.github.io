@@ -1,0 +1,11 @@
+{{- /* Renders a post link, resolving URL priority: external_url > file.src > file.image > permalink.
+     Context: a post Page. */ -}}
+{{ if .Params.external_url }}
+<a href="{{ .Params.external_url }}" target="_blank" rel="noopener noreferrer">{{ .Title }}</a>
+{{ else if .Params.file.src }}
+<a href="{{ .Params.file.src }}" title="{{ .Title }}">{{ .Title }}</a>
+{{ else if .Params.file.image }}
+<a href="{{ .Params.file.image }}" title="{{ .Title }}">{{ .Title }}</a>
+{{ else }}
+<a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a>
+{{ end }}

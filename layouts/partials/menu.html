@@ -1,5 +1,5 @@
 <menu>
-    
+
         <div class="page">
             {{ with .GetPage "info" }}
             <a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a>
@@ -11,37 +11,11 @@
             {{ with .Site.GetPage "/posts" }}
                 {{ range sort (where (where .Pages ".Params.private" "!=" true) ".Params.home-sidebar" true) "Date" "desc" }}
                     <div class="post">
-                        {{ $pageURL := .Permalink }}
-
-                        {{ if .Params.external_url }}
-                        {{ $pageURL = .Params.external_url }}
-                        <a href="{{ $pageURL }}" target="_blank" rel="noopener noreferrer">{{ .Title }}</a>
-
-                        {{ else if .Params.file.src }}
-                        {{ $pageURL = .Params.file.src }}
-                        <a href="{{ $pageURL }}" title="{{ .Title }}">{{ .Title }}</a>
-
-                        {{ else if .Params.file.image }}
-                        {{ $pageURL = .Params.file.image }}
-                        <a href="{{ $pageURL }}" title="{{ .Title }}">{{ .Title }}</a>
-
-                        {{ else }}
-                        <a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a>
-
-                        {{ end }}
-
+                        {{- partial "post-link.html" . -}}
                     </div>
                 {{ end }}
             {{ end }}
         </div>
-    <div class="list-project">
-        {{ with .Site.GetPage "/projects" }}
-            {{ range first 10 (sort .Pages "Date" "asc" (where .Pages ".Params.private" "!=" true))}}
-
-                <a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a>
-
-            {{ end }}
-        {{ end }}
-    </div>
+    {{- partial "menu-project-list.html" . -}}
 
 </menu>

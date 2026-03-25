@@ -11,7 +11,7 @@
 
 <a href="#">cv</a>
 <a href="#">artist safety profile</a>
-<a href="#">exquisite corpse (hiv) traveling exhibition 
+<a href="#">exquisite corpse (hiv) traveling exhibition
 </a>
         {{ $contactPage := site.GetPage "contact" }}
 {{ if and $contactPage (not $contactPage.Draft) }}
@@ -25,12 +25,5 @@
 
     </div>
 
-
-    <div class="list-project">
-        {{ with .Site.GetPage "/projects" }}
-        {{ range first 10 (sort .Pages "Date" "asc" (where .Pages ".Params.private" "!=" true))}}
-        <a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a>
-        {{ end }}
-        {{ end }}
-    </div>
+    {{- partial "menu-project-list.html" . -}}
 </menu>
