@@ -1,7 +1,7 @@
 ---
-title: fs
+title: f/s 
 order: 1
 image:
-  src: /uploads/
+  src: /uploads/fs-loop.png
 external_url:
 ---
