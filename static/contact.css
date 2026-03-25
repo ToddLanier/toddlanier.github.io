@@ -44,3 +44,31 @@ textarea {
   cursor: pointer;
   border: solid 1px;
 }
+
+/* RESPONSIVE CONTACT FORM */
+
+@media (max-width: 1280px) {
+  #form {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    gap: 12px;
+    margin: 30px auto 60px auto;
+  }
+
+  input {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  textarea {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  #submit {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
