@@ -1,7 +1,7 @@
 ---
-title: on illness / district
-order: 04
+title: On Illness, Resistance and Modes of Collective (Health) Care @ DISTRICT 
+order: 5
 image:
-  src: /uploads/top left image 'on illness' from https://district-berlin.com/en/on-illness-resistance-and-modes-of-collective-health-care-3/
+  src: /uploads/luv-illness.png
 external_url: https://district-berlin.com/en/on-illness-resistance-and-modes-of-collective-health-care-3/
 ---

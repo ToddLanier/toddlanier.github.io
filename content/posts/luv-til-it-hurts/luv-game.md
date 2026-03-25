@@ -2,6 +2,6 @@
 title: luv game
 order: 02
 image:
-  src: /uploads/something from https://luvhurts.co/play-me/
-external_url: https://luvhurts.co/play-me/
+  src: /uploads/luv-play-me.png
+external_url: https://luv.tllester.info/play-me/
 ---

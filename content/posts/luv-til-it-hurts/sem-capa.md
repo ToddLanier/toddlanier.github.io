@@ -1,7 +1,7 @@
 ---
-title: sem capa
-order: 03
+title: 'Cadáver Esquisito: uma história de amor intergaláctico chapter'
+order: 3
 image:
-  src: /uploads/thumbnail from book cover sem capa
+  src: /uploads/luv-sem-capa-cover.png
 external_url: https://tllester.info/uploads/Aids_Sem_Capa_ToddLanierLester_edit.pdf
 ---

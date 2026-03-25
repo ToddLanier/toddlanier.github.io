@@ -1,7 +1,7 @@
 ---
-title: luv
-order: 01
+title: Luv 'til it Hurts
+order: 1
 image:
-  src: /uploads/megaphone logo
-external_url:
+  src: /uploads/luv-megaphone.png
+external_url: https://luvtilithurts.co/
 ---
