@@ -31,6 +31,7 @@
     {{- partial "head.html" . -}}
 </head>
 <body>
+    <div class="menu-overlay"></div>
     {{- partial "header.html" . -}}
         <main>
             {{ block "main" . }}
@@ -60,7 +61,34 @@
                     bodyElement.classList.toggle('fs-mode');
                     } else if (currentPath === '/projects/my-art-world/') {
                     bodyElement.classList.toggle('maw-mode');
-                    } 
+                    }
+
+            // Hamburger menu toggle
+            var toggle = document.querySelector('.menu-toggle');
+            var overlay = document.querySelector('.menu-overlay');
+            var menuEl = document.querySelector('menu');
+
+            function openMenu() {
+                bodyElement.classList.add('menu-open');
+                toggle.setAttribute('aria-expanded', 'true');
+            }
+            function closeMenu() {
+                bodyElement.classList.remove('menu-open');
+                toggle.setAttribute('aria-expanded', 'false');
+            }
+
+            if (toggle && menuEl) {
+                toggle.addEventListener('click', function() {
+                    if (bodyElement.classList.contains('menu-open')) {
+                        closeMenu();
+                    } else {
+                        openMenu();
+                    }
                 });
+            }
+            if (overlay) {
+                overlay.addEventListener('click', closeMenu);
+            }
+        });
     </script>
 </html>

@@ -1,6 +1,10 @@
 <header>
-
-<a href="{{ .Site.BaseURL }}" >{{ .Site.Title }}</a> 
+<button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+    <span class="menu-toggle__bar"></span>
+    <span class="menu-toggle__bar"></span>
+    <span class="menu-toggle__bar"></span>
+</button>
+<a href="{{ .Site.BaseURL }}" >{{ .Site.Title }}</a>
 <a aria-current="page" href="{{ .RelPermalink }}">
   {{ if not .IsHome }}
   / {{ .LinkTitle }}
