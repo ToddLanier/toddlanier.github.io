@@ -3,6 +3,9 @@ languageCode = 'en-us'
 title = 'Todd Lanier Lester'
 
 [markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
   [markup.tableOfContents]
     endLevel = 6
     ordered = false

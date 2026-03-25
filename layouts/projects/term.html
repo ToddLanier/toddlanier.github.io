@@ -3,10 +3,14 @@
 {{- partial "menu-project.html" . -}}
 
 <div class="project-content">
+
+    {{ .Content }}
+    
     <div class="project-boxes">
         {{ $projectName := path.Base .RelPermalink }}
         {{ $sectionDir := printf "posts/%s/" $projectName }}
         {{ $sectionPages := where site.RegularPages "File.Dir" $sectionDir }}
+        <!-- DEBUG: projectName={{ $projectName }} sectionDir={{ $sectionDir }} count={{ len $sectionPages }} -->
         {{ $filtered := where $sectionPages "Params.private" "!=" true }}
         {{ range sort $filtered "Params.order" "asc" }}
             {{ $pageURL := .Permalink }}
@@ -42,7 +46,7 @@
             {{ end }}
         {{ end }}
     </div>
-{{ .Content }}
+
 </div>
 
 {{ end }}
