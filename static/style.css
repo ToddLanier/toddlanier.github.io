@@ -102,7 +102,7 @@ menu .list-summary {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     align-items: flex-start;
     flex-grow: 1;
     border-top: 1px solid;
