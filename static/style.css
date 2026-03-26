@@ -191,7 +191,7 @@ menu .list-project a {
 
 .project-boxes {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-content: flex-start;
     flex-direction: row;
     flex-wrap: wrap;
