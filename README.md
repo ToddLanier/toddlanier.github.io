@@ -1,103 +1,31 @@
 # tllester.info
 
-A [Tina CMS](https://tina.io/) project for Hugo.
-
-## Setup
-
-- Fork this repo
-- Clone the fork your local machine.
-- This starter assumes that you have Hugo installed on your local machine. If not, reference [this guide](https://gohugo.io/getting-started/installing/).
+Personal portfolio for Todd Lanier Lester. Hugo static site, deployed on Netlify.
 
 ## Local Development
 
-Install the project's dependencies:
+Requires Hugo `0.154.5` (matches `netlify.toml`).
 
 ```bash
-pnpm install
+hugo server -D
 ```
 
-Run the project locally:
+Open <http://localhost:1313>.
+
+## Build
 
 ```bash
-pnpm dev
+hugo --gc --minify
 ```
 
-Open [http://localhost:1313](http://localhost:1313) with your browser to see the result.
+Output in `public/`.
 
-### Building the Starter Locally (Using the hosted content API)
-
-Replace the `.env.example`, with `.env`
-
-```env
-TINA_CLIENT_ID=<get this from the project you create at app.tina.io>
-TINA_TOKEN=<get this from the project you create at app.tina.io>
-TINA_BRANCH=<Specify the branch with Tina configured>
-```
-
-Build the project:
-
-```bash
-pnpm build
-```
-
-## Deploying the Site
-
-This project can easily be deployed using services like [Netlify](https://www.netlify.com/) or [Vercel](https://vercel.com/).
-
-### Build settings
-
-In general, the build settings will look like so:
-
-![hugo-build-settings](https://user-images.githubusercontent.com/3323181/198081223-c8830e49-2a77-4c7a-b1cf-bc9a44ca96cf.png)
-
-### Environment variables
-
-When setting up the Netlify/Vercel project, apply the `TINA_CLIENT_ID` & `TINA_TOKEN` environment variables from your [app.tina.io](https://app.tina.io) project.
-
-The Hugo theme in this starter also depends on using a specific version of Hugo. Set the following environment variable as well: `HUGO_VERSION`: `0.134.2`
-
-## Learn More
-
-To learn more about Tina, take a look at the following resources:
-
-- [Tina Docs](https://tina.io/docs)
-- [Getting Started Guide](https://tina.io/guides/tinacms/non-react-based-ssg/guide/)
-
-You can check out the [Tina GitHub repository](https://github.com/tinacms/tinacms) - your feedback and contributions are welcome!
-
-## Notes
-
-change bg-color on path:
-
-```js
-document.addEventListener('DOMContentLoaded', function() {
-    const currentPath = window.location.pathname;
-    if (currentPath === '/') {
-        // Home page
-        document.body.style.backgroundColor = 'lightblue';
-    }  else if (currentPath === '/about') {
-        // About page
-        document.body.style.backgroundColor = 'lightgreen';
-    } else {
-        // Default background for other pages
-        document.body.style.backgroundColor = 'white';
-    }
-});
-```
-
-pull wp posts into md:
-
-```bash
-npx wordpress-export-to-markdown --input=export.xml
-```
-
-- Running Pagefind
-
-`alias hs='rm -rf public && npx -y pagefind --site public --serve`
-
-`npm_config_yes=true npx pagefind --site "public" --output-subdir ../static/pagefind`
+## Pagefind Search Index
 
 ```bash
 npm_config_yes=true npx pagefind --site "public" --output-subdir ../static/pagefind
-hugo server
 ```
+
+## Deploy
+
+Push to `main`. Netlify builds via `hugo --gc --minify --baseURL "${baseURL}"` (see `netlify.toml`).
