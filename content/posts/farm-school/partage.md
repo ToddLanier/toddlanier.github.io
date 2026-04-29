@@ -1,10 +1,13 @@
 ---
 title: Partage
 order: 7
-file:
-  src: 
 image:
-  src: /uploads/partage-thumb.png
+  src: /uploads/fs-7-partage.jpg
+external_url: /pdfs/pARTage-conference.pdf
+translations:
+  - lang: poster
+    url: /uploads/fs-7-partage-poster.jpg
+  - lang: conference
+    url: /pdfs/pARTage-conference.pdf
 ---
 
-TODO: image + link pending. Spec lists only title.
