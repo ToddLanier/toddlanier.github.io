@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     {{ range .Pages }}
         {{- if .Params.private }}{{ continue }}{{ end -}}
-        {{- if .Params.external_url }}{{ continue }}{{ end -}}
+        {{- if .Params.asset }}{{ continue }}{{ end -}}
         {{- if .Params.file }}{{ continue }}{{ end -}}
         {{- if .Params.translations }}{{ continue }}{{ end -}}
         {{- if eq .Title "summary" }}{{ continue }}{{ end -}}

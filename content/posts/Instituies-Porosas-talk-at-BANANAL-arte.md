@@ -1,6 +1,6 @@
 ---
 file:
-  src: /uploads/proac_perdidos e achados_programaca.pdf
+  src: /pdfs/proac_perdidos e achados_programaca.pdf
 title: Instituições Porosas talk at BANANAL arte
 projects:
   - lanchonete

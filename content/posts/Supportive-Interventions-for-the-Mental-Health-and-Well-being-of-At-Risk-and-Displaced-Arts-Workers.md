@@ -1,6 +1,6 @@
 ---
 file:
-  src: /uploads/At-risk_Vol3_Chapter8.pdf
+  src: /pdfs/At-risk_Vol3_Chapter8.pdf
 title: >-
   Supportive Interventions for the Mental Health and Well-being of At-Risk and
   Displaced Arts Workers

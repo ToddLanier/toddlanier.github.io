@@ -25,8 +25,8 @@
                             {{ end }}
                         </div>
                     </div>
-            {{ else if .Params.external_url }}
-                {{ $pageURL = .Params.external_url }}
+            {{ else if .Params.asset }}
+                {{ $pageURL = .Params.asset }}
                     <a class="project-box" style="background-image: url('{{ .Params.image.src }}');" href="{{ $pageURL }}"{{ partial "link-attrs.html" $pageURL | safeHTMLAttr }} title="{{ .Title }}">
                         <div></div>
                     </a>
