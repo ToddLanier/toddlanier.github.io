@@ -15,7 +15,7 @@
         {{ range sort $filtered "Params.order" "asc" }}
             {{ if .Params.buttons }}
                     {{ $isGrid := eq (len .Params.buttons) 4 }}
-                    <div class="project-box project-box--multilingual" style="background-image: url('{{ .Params.image }}');" title="{{ .Title }}">
+                    <div class="project-box project-box--multilingual" style="background-image: url('{{ .Params.image | relURL }}');" title="{{ .Title }}">
                         <div class="project-box__overlay{{ if $isGrid }} project-box__overlay--grid{{ end }}">
                             {{ range .Params.buttons }}
                             <a class="project-box__lang" href="{{ .asset }}"{{ partial "link-attrs.html" .asset | safeHTMLAttr }}>
@@ -25,11 +25,11 @@
                         </div>
                     </div>
             {{ else if .Params.asset }}
-                    <a class="project-box" style="background-image: url('{{ .Params.image }}');" href="{{ .Params.asset }}"{{ partial "link-attrs.html" .Params.asset | safeHTMLAttr }} title="{{ .Title }}">
+                    <a class="project-box" style="background-image: url('{{ .Params.image | relURL }}');" href="{{ .Params.asset }}"{{ partial "link-attrs.html" .Params.asset | safeHTMLAttr }} title="{{ .Title }}">
                         <div></div>
                     </a>
             {{ else }}
-                <a class="project-box" style="background-image: url('{{ .Params.image }}');" href="{{ .Permalink }}" title="{{ .Title }}">
+                <a class="project-box" style="background-image: url('{{ .Params.image | relURL }}');" href="{{ .Permalink }}" title="{{ .Title }}">
                          <div></div>
                 </a>
             {{ end }}

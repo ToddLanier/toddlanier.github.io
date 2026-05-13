@@ -41,7 +41,10 @@
 </body>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            const p = window.location.pathname;
+            const basePath = {{ strings.TrimRight "/" (urls.Parse .Site.BaseURL).Path | jsonify }};
+            const p = (basePath && window.location.pathname.startsWith(basePath))
+                ? (window.location.pathname.slice(basePath.length) || '/')
+                : window.location.pathname;
             const bodyElement = document.body;
 
             // Extract the project slug from paths like /projects/slug/ or /posts/slug/anything/
