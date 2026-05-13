@@ -1,6 +1,6 @@
 ---
 title: FARM/SCHOOL
-order: 3
+order: 8
 image: /uploads/fs-famschool.png
 asset:
 ---
