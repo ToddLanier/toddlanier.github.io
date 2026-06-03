@@ -302,6 +302,12 @@ menu .list-project a {
     padding: 0.5em;
 }
 
+/* Single title-only overlay (emk no-asset boxes) */
+.project-box__title-only,
+.project-box__title-only:first-child {
+    border-right: none;
+}
+
 .content ol li {
     margin-bottom: .5em;
 }

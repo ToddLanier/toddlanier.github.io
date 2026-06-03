@@ -12,6 +12,7 @@
         {{ $sectionPages := where site.RegularPages "File.Dir" $sectionDir }}
         <!-- DEBUG: projectName={{ $projectName }} sectionDir={{ $sectionDir }} count={{ len $sectionPages }} -->
         {{ $filtered := where $sectionPages "Params.private" "!=" true }}
+        {{ $isEmk := eq $projectName "el-mejor-karate" }}
         {{ range sort $filtered "Params.order" "asc" }}
             {{ if .Params.buttons }}
                     {{ $isGrid := eq (len .Params.buttons) 4 }}
@@ -44,6 +45,12 @@
                     <a class="project-box" style="background-image: url('{{ .Params.image | relURL }}');" href="{{ .Params.asset }}"{{ partial "link-attrs.html" .Params.asset | safeHTMLAttr }} title="{{ .Title }}">
                         <div></div>
                     </a>
+            {{ else if $isEmk }}
+                <div class="project-box project-box--multilingual" style="background-image: url('{{ .Params.image | relURL }}');">
+                    <div class="project-box__overlay">
+                        <span class="project-box__lang project-box__title-only">{{ .Title }}</span>
+                    </div>
+                </div>
             {{ else }}
                 <a class="project-box" style="background-image: url('{{ .Params.image | relURL }}');" href="{{ .Permalink }}" title="{{ .Title }}">
                          <div></div>
