@@ -2,6 +2,6 @@
 title: Skoll World Forum article
 date: 2025-10-23T06:00:00.000Z
 home-sidebar: true
-order: 10
+order: 13
 asset: /pdfs/skoll-world-forum.pdf
 ---
