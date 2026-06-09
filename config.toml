@@ -1,6 +1,23 @@
 baseURL = 'https://tllester.info/'
 languageCode = 'en-us'
 title = 'Todd Lanier Lester'
+enableRobotsTXT = true
+
+[params]
+  description = 'Todd Lanier Lester — writer, cultural worker, and founder of freeDimensional, Lanchonete.org, and Luv ’til it Hurts.'
+  author = 'Todd Lanier Lester'
+  ogImage = 'favicon/favicon-512x512.png'
+  googleSiteVerification = ''
+
+  [params.schema]
+    type = 'Person'
+    name = 'Todd Lanier Lester'
+    alternateName = ['TL Lester', 'Todd Lester', 'tllester']
+    sameAs = [
+      'https://fd.tllester.info/',
+      'https://lanchonete.tllester.info/',
+      'https://luvblog.tllester.info/',
+    ]
 
 [markup]
   [markup.goldmark]

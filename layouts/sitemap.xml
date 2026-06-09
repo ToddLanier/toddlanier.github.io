@@ -5,6 +5,7 @@
         {{- if .Params.asset }}{{ continue }}{{ end -}}
         {{- if .Params.file }}{{ continue }}{{ end -}}
         {{- if .Params.translations }}{{ continue }}{{ end -}}
+        {{- if .Params.buttons }}{{ continue }}{{ end -}}
         {{- if eq .Title "summary" }}{{ continue }}{{ end -}}
         <url>
             <loc>{{ .Permalink }}</loc>{{ if not .Lastmod.IsZero }}
