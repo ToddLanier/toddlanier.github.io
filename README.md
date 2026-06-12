@@ -1,10 +1,8 @@
 # tllester.info
 
-Personal portfolio for Todd Lanier Lester. Hugo static site, deployed on Netlify.
+All things Todd Lanier Lester. Hugo static site, deployed on GitHub Pages.
 
 ## Local Development
-
-Requires Hugo `0.154.5` (matches `netlify.toml`).
 
 ```bash
 hugo server -D
@@ -22,4 +20,6 @@ Output in `public/`.
 
 ## Deploy
 
-Push to `main`. Netlify builds via `hugo --gc --minify --baseURL "${baseURL}"` (see `netlify.toml`).
+Push to `main` → GitHub Actions builds and deploys to GitHub Pages at [tllester.info](https://tllester.info).
+
+Any other branch → deploys a preview to `https://tllester.info/preview/<branch>/`.
