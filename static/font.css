@@ -99,6 +99,42 @@
     text-rendering: optimizeLegibility;
 }
 
+
+
+/* Roboto Condensed */
+
+@font-face {
+    font-family: "Roboto Condensed";
+    src: url("font/RobotoCondensed/RobotoCondensed-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: "Roboto Condensed";
+    src: url("font/RobotoCondensed/RobotoCondensed-Italic.ttf") format("truetype");
+    font-style: italic;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: "Roboto Condensed";
+    src: url("font/RobotoCondensed/RobotoCondensed-SemiBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 700;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: "Roboto Condensed";
+    src: url("font/RobotoCondensed/RobotoCondensed-SemiBoldItalic.ttf") format("truetype");
+    font-style: italic;
+    font-weight: 700;
+    text-rendering: optimizeLegibility;
+}
+
 /* Bitcount_Grid_Double */
 
 @font-face {

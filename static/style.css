@@ -20,7 +20,7 @@ html {
 }
 
 body {
-    font-family: "Roboto";
+    font-family: "Roboto Condensed";
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     display: flex;
