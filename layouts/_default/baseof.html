@@ -37,6 +37,7 @@
 {{- else if or (eq $sec "projects") (eq $sec "posts") -}}{{- with index $modes $slug -}}{{- $bodyClass = . -}}{{- end -}}
 {{- end -}}
 <body{{ with $bodyClass }} class="{{ . }}"{{ end }}>
+    {{- partial "font-preview.html" . -}}
     <div class="menu-overlay"></div>
     {{- partial "header.html" . -}}
         <main>

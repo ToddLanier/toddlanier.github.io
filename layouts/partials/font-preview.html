@@ -1,0 +1,59 @@
+{{- /* Font preview widget — branch `fonts` only. Filesystem-driven font picker.
+       Scans static/font/ at build time: every subfolder with a .ttf becomes an
+       @font-face + a dropdown option. Drop a new font folder in → it appears.
+       Selection applied to body inline (beats the single body font rule) and
+       persisted in localStorage so it sticks across pages. */ -}}
+{{- $base := "static/font" -}}
+{{- $fonts := slice -}}
+{{- range $e := (os.ReadDir $base) -}}
+  {{- if $e.IsDir -}}
+    {{- $dir := printf "%s/%s" $base $e.Name -}}
+    {{- $cands := slice -}}
+    {{- range (os.ReadDir $dir) -}}
+      {{- if strings.HasSuffix (lower .Name) ".ttf" -}}{{- $cands = $cands | append (printf "%s/%s" $dir .Name) -}}{{- end -}}
+    {{- end -}}
+    {{- $sub := printf "%s/static" $dir -}}
+    {{- if (os.FileExists $sub) -}}
+      {{- range (os.ReadDir $sub) -}}
+        {{- if strings.HasSuffix (lower .Name) ".ttf" -}}{{- $cands = $cands | append (printf "%s/%s" $sub .Name) -}}{{- end -}}
+      {{- end -}}
+    {{- end -}}
+    {{- if gt (len $cands) 0 -}}
+      {{- $rep := index $cands 0 -}}
+      {{- $found := false -}}
+      {{- range $cands -}}{{- if and (not $found) (findRE `(?i)regular` .) (not (findRE `(?i)italic` .)) -}}{{- $rep = . -}}{{- $found = true -}}{{- end -}}{{- end -}}
+      {{- $label := replaceRE `([a-z])([A-Z])` "$1 $2" (replace $e.Name "_" " ") -}}
+      {{- $fonts = $fonts | append (dict "id" $e.Name "label" $label "url" (relURL (strings.TrimPrefix "static/" $rep))) -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+<style id="font-preview-faces">
+{{ range $fonts }}@font-face{font-family:"{{ .id }}";src:url("{{ .url }}") format("truetype");font-display:swap;}
+{{ end }}.font-preview{position:fixed;top:8px;right:8px;z-index:9999;background:#fff;border:1px solid #444;border-radius:4px;padding:4px 8px;font-family:system-ui,sans-serif;font-size:13px;line-height:normal;box-shadow:0 1px 4px rgba(0,0,0,.2);}
+.font-preview label{margin-right:6px;color:#444;}
+.font-preview select{font-size:13px;font-family:system-ui,sans-serif;}
+</style>
+<div class="font-preview">
+  <label for="font-preview-select">Font</label>
+  <select id="font-preview-select">
+    {{ range $fonts }}<option value="{{ .id }}" style="font-family:'{{ .id }}'"{{ if eq .id "RobotoCondensed" }} selected{{ end }}>{{ .label }}</option>
+    {{ end }}
+  </select>
+</div>
+<script>
+(function(){
+  var KEY='tll-preview-font';
+  function apply(f){ if(f){ document.body.style.fontFamily='"'+f+'"'; } }
+  try{ apply(localStorage.getItem(KEY)); }catch(e){}
+  document.addEventListener('DOMContentLoaded',function(){
+    var sel=document.getElementById('font-preview-select');
+    if(!sel) return;
+    var saved=null; try{ saved=localStorage.getItem(KEY); }catch(e){}
+    if(saved){ sel.value=saved; apply(saved); }
+    sel.addEventListener('change',function(){
+      apply(sel.value);
+      try{ localStorage.setItem(KEY,sel.value); }catch(e){}
+    });
+  });
+})();
+</script>
