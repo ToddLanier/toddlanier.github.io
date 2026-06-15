@@ -132,3 +132,13 @@
     font-weight: 700;
     text-rendering: optimizeLegibility;
 }
+
+/* BlackOpsOne */
+
+@font-face {
+    font-family: "BlackOpsOne";
+    src: url("font/Black_Ops_One/BlackOpsOne-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+}
