@@ -4,7 +4,7 @@ title: >-
   Displaced Arts Workers
 date: 2025-10-27T06:00:00.000Z
 home-sidebar: true
-order: 5
+order: 700
 asset: /pdfs/At-risk_Vol3_Chapter8.pdf
 ---
 
