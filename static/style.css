@@ -525,6 +525,11 @@ body.home menu {
     border-right: 1px solid;
 }
 
+/* Sidebar uses Lato on all pages except the frontpage */
+body:not(.home) menu {
+    font-family: "Lato", sans-serif;
+}
+
 /* INFO  */
 body.info-mode {
     background-color: #24d324;
