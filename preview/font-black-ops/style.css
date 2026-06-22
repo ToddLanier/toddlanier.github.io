@@ -106,7 +106,7 @@ menu .list-summary {
     align-items: flex-start;
     flex-grow: 1;
     border-top: 1px solid;
-    padding: 15px 16px 0;
+    padding: 15px 9px 0;
     line-height: 1.4;
     height: 500px;
     overflow-y: auto;
@@ -523,6 +523,11 @@ body.menu-open .menu-toggle__bar:nth-child(3) {
 
 body.home menu {
     border-right: 1px solid;
+}
+
+/* Sidebar uses Lato on all pages except the frontpage */
+body:not(.home) menu {
+    font-family: "Lato", sans-serif;
 }
 
 /* INFO  */
