@@ -526,9 +526,9 @@ body.home menu {
 }
 
 /* Sidebar uses Lato on all pages except the frontpage */
-/* body:not(.home) menu {
+body:not(.home) menu {
     font-family: "Lato", sans-serif;
-} */
+}
 
 /* INFO  */
 body.info-mode {
