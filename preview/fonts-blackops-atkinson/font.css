@@ -1,0 +1,166 @@
+@font-face {
+    font-family: "Roboto Mono";
+    src: url("font/RobotoMono/RobotoMono-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: "Roboto Mono";
+    src: url("font/RobotoMono/RobotoMono-Italic.ttf") format("truetype");
+    font-style: italic;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: "Roboto Mono";
+    src: url("font/RobotoMono/RobotoMono-Bold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 700;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: "Roboto Mono";
+    src: url("font/RobotoMono/RobotoMono-BoldItalic.ttf") format("truetype");
+    font-style: italic;
+    font-weight: 700;
+    text-rendering: optimizeLegibility;
+}
+
+
+/* LATO */
+
+@font-face {
+    font-family: "Lato";
+    src: url("font/Lato/Lato-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url("font/Lato/Lato-Italic.ttf") format("truetype");
+    font-style: italic;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url("font/Lato/Lato-Bold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 700;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url("font/Lato/Lato-BoldItalic.ttf") format("truetype");
+    font-style: italic;
+    font-weight: 700;
+    text-rendering: optimizeLegibility;
+}
+
+/* Roboto */
+
+@font-face {
+    font-family: "Roboto";
+    src: url("font/Roboto/Roboto-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("font/Roboto/Roboto-Italic.ttf") format("truetype");
+    font-style: italic;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("font/Roboto/Roboto-SemiBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 700;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("font/Roboto/Roboto-SemiBoldItalic.ttf") format("truetype");
+    font-style: italic;
+    font-weight: 700;
+    text-rendering: optimizeLegibility;
+}
+
+/* Bitcount_Grid_Double */
+
+@font-face {
+    font-family: "BitcountGridDouble";
+    src: url("font/Bitcount_Grid_Double/BitcountGridDouble-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+}
+
+
+
+@font-face {
+    font-family: "BitcountGridDouble";
+    src: url("font/Bitcount_Grid_Double/BitcountGridDouble-Bold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 700;
+    text-rendering: optimizeLegibility;
+}
+
+
+
+/* BlackOpsOne */
+
+@font-face {
+    font-family: "BlackOpsOne";
+    src: url("font/Black_Ops_One/BlackOpsOne-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+}
+
+/* Atkinson_HyperLegible */
+
+@font-face {
+    font-family: "Atkinson_HyperLegible";
+    src: url("font/Atkinson_HyperLegible/AtkinsonHyperlegibleNext-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: "Atkinson_HyperLegible";
+    src: url("font/Atkinson_HyperLegible/AtkinsonHyperlegibleNext-Regularitalic.ttf") format("truetype");
+    font-style: italic;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: "Atkinson_HyperLegible";
+    src: url("font/Atkinson_HyperLegible/AtkinsonHyperlegibleNext-Bold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 700;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: "Atkinson_HyperLegible";
+    src: url("font/Atkinson_HyperLegible/AtkinsonHyperlegibleNext-Bolditalic.ttf") format("truetype");
+    font-style: italic;
+    font-weight: 700;
+    text-rendering: optimizeLegibility;
+}
