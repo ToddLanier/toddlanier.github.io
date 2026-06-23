@@ -525,9 +525,9 @@ body.home menu {
     border-right: 1px solid;
 }
 
-/* Sidebar uses Lato on all pages except the frontpage */
-body:not(.home) menu {
-    font-family: "Lato", sans-serif;
+/* Everything except the home and contact pages uses Atkinson Hyperlegible */
+body:not(.home):not(.contact-mode) {
+    font-family: "Atkinson_HyperLegible", sans-serif;
 }
 
 /* INFO  */
