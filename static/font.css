@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Roboto Mono";
-    src: url("font/RobotoMono-Regular.ttf") format("truetype");
+    src: url("font/RobotoMono/RobotoMono-Regular.ttf") format("truetype");
     font-style: normal;
     font-weight: 400;
     text-rendering: optimizeLegibility;
@@ -8,7 +8,7 @@
 
 @font-face {
     font-family: "Roboto Mono";
-    src: url("font/RobotoMono-Italic.ttf") format("truetype");
+    src: url("font/RobotoMono/RobotoMono-Italic.ttf") format("truetype");
     font-style: italic;
     font-weight: 400;
     text-rendering: optimizeLegibility;
@@ -16,7 +16,7 @@
 
 @font-face {
     font-family: "Roboto Mono";
-    src: url("font/RobotoMono-Bold.ttf") format("truetype");
+    src: url("font/RobotoMono/RobotoMono-Bold.ttf") format("truetype");
     font-style: normal;
     font-weight: 700;
     text-rendering: optimizeLegibility;
@@ -24,7 +24,7 @@
 
 @font-face {
     font-family: "Roboto Mono";
-    src: url("font/RobotoMono-BoldItalic.ttf") format("truetype");
+    src: url("font/RobotoMono/RobotoMono-BoldItalic.ttf") format("truetype");
     font-style: italic;
     font-weight: 700;
     text-rendering: optimizeLegibility;
@@ -109,29 +109,17 @@
     text-rendering: optimizeLegibility;
 }
 
-@font-face {
-    font-family: "BitcountGridDouble";
-    src: url("font/Bitcount_Grid_Double/BitcountGridDouble-Italic.ttf") format("truetype");
-    font-style: italic;
-    font-weight: 400;
-    text-rendering: optimizeLegibility;
-}
+
 
 @font-face {
     font-family: "BitcountGridDouble";
-    src: url("font/Bitcount_Grid_Double/BitcountGridDouble-SemiBold.ttf") format("truetype");
+    src: url("font/Bitcount_Grid_Double/BitcountGridDouble-Bold.ttf") format("truetype");
     font-style: normal;
     font-weight: 700;
     text-rendering: optimizeLegibility;
 }
 
-@font-face {
-    font-family: "BitcountGridDouble";
-    src: url("font/Bitcount_Grid_Double/BitcountGridDouble-SemiBoldItalic.ttf") format("truetype");
-    font-style: italic;
-    font-weight: 700;
-    text-rendering: optimizeLegibility;
-}
+
 
 /* BlackOpsOne */
 
@@ -140,5 +128,39 @@
     src: url("font/Black_Ops_One/BlackOpsOne-Regular.ttf") format("truetype");
     font-style: normal;
     font-weight: 400;
+    text-rendering: optimizeLegibility;
+}
+
+/* Atkinson_HyperLegible */
+
+@font-face {
+    font-family: "Atkinson_HyperLegible";
+    src: url("font/Atkinson_HyperLegible/AtkinsonHyperlegibleNext-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: "Atkinson_HyperLegible";
+    src: url("font/Atkinson_HyperLegible/AtkinsonHyperlegibleNext-Regularitalic.ttf") format("truetype");
+    font-style: italic;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: "Atkinson_HyperLegible";
+    src: url("font/Atkinson_HyperLegible/AtkinsonHyperlegibleNext-Bold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 700;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: "Atkinson_HyperLegible";
+    src: url("font/Atkinson_HyperLegible/AtkinsonHyperlegibleNext-Bolditalic.ttf") format("truetype");
+    font-style: italic;
+    font-weight: 700;
     text-rendering: optimizeLegibility;
 }
