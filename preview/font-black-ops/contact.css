@@ -9,7 +9,7 @@
 }
 
 input {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Atkinson_HyperLegible', sans-serif;
   font-size: 0.875em;
   width: 470px;
   height: 50px;
@@ -23,6 +23,8 @@ input {
 }
 
 textarea {
+  font-family: "Atkinson_HyperLegible", sans-serif;
+  font-size: 0.875em;
   width: 470px;
   max-width: 470px;
   height: 110px;
