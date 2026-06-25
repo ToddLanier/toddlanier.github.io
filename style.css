@@ -20,7 +20,7 @@ html {
 }
 
 body {
-    font-family: "Roboto";
+    font-family: "BlackOpsOne";
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     display: flex;
@@ -523,6 +523,11 @@ body.menu-open .menu-toggle__bar:nth-child(3) {
 
 body.home menu {
     border-right: 1px solid;
+}
+
+/* Everything except the home and contact pages uses Atkinson Hyperlegible */
+body:not(.home):not(.contact-mode) {
+    font-family: "Atkinson_HyperLegible", sans-serif;
 }
 
 /* INFO  */
