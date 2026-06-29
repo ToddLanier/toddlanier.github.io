@@ -47,7 +47,7 @@ a:visited {
 main {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
     height: 720px;
 }
 
