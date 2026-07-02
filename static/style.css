@@ -1,10 +1,6 @@
 :root {
     --global-font-size: 16px;
     --global-font-color: #444;
-    /* --mono-font-stack: Roboto Mono, "Fira Sans", "Droid Sans",
-        Courier New, monospace, serif;
-    --font-stack: Roboto Mono, "Fira Sans", "Droid Sans", Courier New, monospace,
-        serif; */
     --global-line-height: 1.6em;
     --page-width: 70em;
     --display-h1-decoration: 1;
@@ -79,10 +75,6 @@ menu .page {
     align-items: flex-start;
 }
 
-/* menu .page img {
-    width: 25px;
-} */
-
 menu a:hover {
     text-decoration: underline;
     color: lightcoral
@@ -135,8 +127,6 @@ menu .list-project {
 menu .list-project a {
     display: block;
 }
-
-
 
 
 /* WIGGLE */
@@ -458,7 +448,6 @@ body.menu-open .menu-toggle__bar:nth-child(3) {
     /* Project boxes — 2 columns, no white bg */
     .project-box {
         width: 267px;
-        /* background-color: transparent; */
     }
 
     footer {
@@ -509,7 +498,6 @@ body.menu-open .menu-toggle__bar:nth-child(3) {
     .project-box {
         width: 267px;
         height: 180px;
-        /* background-color: transparent; */
     }
 
     audio {
@@ -631,11 +619,9 @@ body.fs-mode .project-box__lang:hover {
 }
 
 /* MY ART WORLD */
-
 body.maw-mode {
     background-color: #4ab4e7;
 }
-
 
 body.maw-mode menu {
     border: 1px solid;
