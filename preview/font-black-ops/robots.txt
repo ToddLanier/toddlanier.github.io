@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://tllester.info/preview/font-black-ops/sitemap.xml
