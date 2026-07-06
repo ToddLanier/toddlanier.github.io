@@ -14,6 +14,8 @@ More recently Todd began writing on artist methodology, both reconsidering his o
 
 Todd became a sticker artist--a.k.a. el mejor karate--whilst living in São Paulo. This ad hoc process continues to clarify the pseudonym or decoy-tendency in naming his previous artworks.
 
+<br>
+
 ## statement
 
 The statement is on the making of an archive site and portal on present and future work. Like some other artists, I experience art as life, which makes updating one's portfolio part of the process. With this site, I offer a trace set of tools that evolved over the lifespan of three works lasting twenty years altogether: freeDimensional, Lanchonete(.)org, and Luv ‘til it Hurts. As a student of politics and administration, I read Antonio Gramsci’s 1947 _Prison Notebooks_ a long time ago, yet continue to deliberate on a popular line, “The crisis consists precisely in the fact that the old is dying and the new cannot be born; in this interregnum a great variety of morbid symptoms appear.”
