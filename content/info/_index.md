@@ -23,7 +23,3 @@ The statement is on the making of an archive site and portal on present and futu
 freeDimensional is important to me because it’s the same period in which I settled into the vocation of artist. I understood that I was working in an interdisciplinary way in order to make a specific intervention. This happened around the same time as a social turn on the global art scene. I would make a series of three projects over twenty years, each with a unique theme, dedicated timeframe and variation on form: freeDimensional, a 10-year network on artist safety; Lanchonete(.)org, a 5-year site-specific collective on the right to the city; Luv ‘til it Hurts, a 2-year soapbox on HIV + stigma. Each was designed with the potential to live on after my dedicated leadership period, my response to the Gramsci line reiterated time and again. Each experiment, a salute to new birth, blinders against a ‘variety of morbid symptoms’.
 
 I’m a dreamer from the sticks. Perhaps in contrast to the materials I grew up around, I enjoy the presence of theory and literary reference; framing my work in conceptual art terms. One of my biggest regrets is never learning to weld. The farm where I tended goats with my brother, learned to ride a horse and round-up cows continues to be my school. As I said, a portal onto the future or at least a play on words.
-
-tll/emk
-
-\###
