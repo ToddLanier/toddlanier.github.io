@@ -2,5 +2,5 @@
 title: CABARE CAZUZA
 order: 13
 image: /uploads/luv-13-cabare-cazuza.png
-asset: /pdfs/luv-CabaretCazuza.pdf
+asset: https://luv.tllester.info/pdfs/cabaretcazuza.pdf
 ---
