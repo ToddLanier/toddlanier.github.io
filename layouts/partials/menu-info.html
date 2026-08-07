@@ -10,13 +10,13 @@
 
 
 <a href="https://tllester.info/pdfs/TLLester_CV_2026.pdf">cv</a>
-<a href="https://tllester.info/pdfs/ArtistSafetyInfo.pdf">artist safety profile</a>
-<a href="#">exquisite corpse (hiv) traveling exhibition
-</a>
+
         {{ $contactPage := site.GetPage "contact" }}
 {{ if and $contactPage (not $contactPage.Draft) }}
   <a href="{{ $contactPage.RelPermalink }}">contact</a>
 {{ end }}
+
+<br/>
 
 
           {{ with .GetPage "info" }}
