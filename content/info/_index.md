@@ -4,6 +4,11 @@ date: 2025-10-01T06:00:00.000Z
 type: info
 summary: >
   I lead workshops, speak and teach on themes pertaining to my art work–eg [artist safety](https://tllester.info/pdfs/ArtistSafetyInfo.pdf), the right to the city, [HIV and stigma](https://tllester.info/projects/luv-til-it-hurts/)–areas in which I’ve otherwise trained or immersed such as organizational development, migration studies, artist residency; and the methodology resulting from community organizing, urban intervention, graffiti, film or literature intersecting my artistic practice.
+
+  ![Art Policy Nexus](https://broadenimpact.com/wp-content/uploads/2015/12/artspolicy_1_0_5.png) 
+
+
+
 ---
 
 ## biography
