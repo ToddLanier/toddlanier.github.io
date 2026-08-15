@@ -5,9 +5,10 @@ type: info
 summary: >
   I lead workshops, speak and teach on themes pertaining to my art work–eg [artist safety](https://tllester.info/pdfs/ArtistSafetyInfo.pdf), the right to the city, [HIV and stigma](https://tllester.info/projects/luv-til-it-hurts/)–areas in which I’ve otherwise trained or immersed such as organizational development, migration studies, artist residency; and the methodology resulting from community organizing, urban intervention, graffiti, film or literature intersecting my artistic practice.
 
-  ![Art Policy Nexus](https://broadenimpact.com/wp-content/uploads/2015/12/artspolicy_1_0_5.png) 
-
-
+  [![Art Policy Nexus](https://broadenimpact.com/wp-content/uploads/2015/12/artspolicy_1_0_5.png)](https://broadenimpact.com/category/arts-policy/) 
+  
+  
+  I help create community- and/or thematic-publishing platforms like the World Policy Institute's [Arts/Policy Nexus,](https://broadenimpact.com/category/arts-policy/) [Publication Studio São Paulo (PSSP)](https://lanchonete.tllester.info/lanchonete/pdfs/publication-studio-sao-paolo.pdf) and [ArtsEverywhere.](https://www.artseverywhere.ca/) 
 
 ---
 
