@@ -1,9 +1,15 @@
 {{ define "main" }}
 
-    {{- partial "menu.html" . -}}
+    {{ $slug := path.Base .File.Dir }}
+    {{ $projectPage := site.GetPage (printf "/projects/%s" $slug) }}
+    {{ if $projectPage }}
+        {{- partial "menu-project.html" $projectPage -}}
+    {{ else }}
+        {{- partial "menu.html" . -}}
+    {{ end }}
 
     <div class="content">
-        <h1>{{ .Page.Title }}</h1>
+        <h1>{{ .Page.Title }}{{ if and (not .Content) (eq .File.Dir "posts/farm-school/") }} is coming soon.{{ end }}</h1>
         {{ if and (isset .Params "image") .Params.image }}
             {{ $imgPath := "" }}
             {{ if reflect.IsMap .Params.image }}{{ $imgPath = .Params.image.src }}{{ else }}{{ $imgPath = .Params.image }}{{ end }}
