@@ -635,6 +635,11 @@ body.fs-mode .project-box__lang:hover {
     color: white;
 }
 
+/* FS single posts (title + content) in the display font */
+body.fs-mode .content {
+    font-family: "BlackOpsOne", sans-serif;
+}
+
 /* MY ART WORLD */
 body.maw-mode {
     background-color: #4ab4e7;
