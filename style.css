@@ -118,6 +118,11 @@ menu .list-summary .post {
     margin-bottom: 1.3em;
 }
 
+menu .list-summary img {
+    width: 90%;
+    padding-top: 22px;
+}
+
 menu .list-project {
     border-top: 1px solid;
     line-height: 1.5;
