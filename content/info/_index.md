@@ -8,7 +8,7 @@ summary: >
   [![Art Policy Nexus](https://broadenimpact.com/wp-content/uploads/2015/12/artspolicy_1_0_5.png)](https://broadenimpact.com/category/arts-policy/) 
   
   
-  I help create community- and/or thematic-publishing platforms like the World Policy Institute's [Arts/Policy Nexus,](https://broadenimpact.com/category/arts-policy/) [Publication Studio São Paulo (PSSP)](https://lanchonete.tllester.info/lanchonete/pdfs/publication-studio-sao-paolo.pdf) and [ArtsEverywhere.](https://www.artseverywhere.ca/) 
+  I help create community- and/or thematic-publishing platforms like the World Policy Institute's [Arts/Policy Nexus,](https://broadenimpact.com/category/arts-policy/) [Publication Studio São Paulo (PSSP)](https://lanchonete.tllester.info/lanchonete/pdfs/publication-studio-sao-paolo.pdf) and [ArtsEverywhere.](https://elmejorkarate.substack.com/p/arts-everywhere) 
 
 ---
 
