@@ -52,7 +52,7 @@
                         <div></div>
                     </a>
             {{ else if $isEmk }}
-                <div class="project-box project-box--multilingual" style="background-image: url('{{ .Params.image | relURL }}');">
+                <div class="project-box project-box--multilingual project-box--tappable" tabindex="0" role="button" aria-label="{{ .Title }}" style="background-image: url('{{ .Params.image | relURL }}');">
                     <div class="project-box__overlay">
                         <span class="project-box__lang project-box__title-only">{{ .Title }}</span>
                     </div>
@@ -66,5 +66,37 @@
     </div>
 
 </div>
+
+<script>
+(function () {
+    // iOS Safari does not apply :hover on tap for non-interactive elements, so the
+    // title overlay on these boxes never appeared there. Toggle a class instead.
+    var boxes = document.querySelectorAll('.project-box--tappable');
+    if (!boxes.length) return;
+
+    function deactivateAll(except) {
+        boxes.forEach(function (b) {
+            if (b !== except) b.classList.remove('is-active');
+        });
+    }
+
+    boxes.forEach(function (box) {
+        box.addEventListener('click', function (e) {
+            e.stopPropagation();
+            var wasActive = box.classList.contains('is-active');
+            deactivateAll(box);
+            box.classList.toggle('is-active', !wasActive);
+        });
+        box.addEventListener('keydown', function (e) {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                box.click();
+            }
+        });
+    });
+
+    document.addEventListener('click', function () { deactivateAll(null); });
+})();
+</script>
 
 {{ end }}

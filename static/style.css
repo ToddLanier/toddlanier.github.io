@@ -224,8 +224,19 @@ menu .list-project a {
     transition: opacity 0.2s ease;
 }
 
-.project-box--multilingual:hover .project-box__overlay {
+.project-box--multilingual:hover .project-box__overlay,
+.project-box--multilingual:focus .project-box__overlay,
+.project-box--multilingual:focus-within .project-box__overlay,
+.project-box--multilingual.is-active .project-box__overlay {
     opacity: 1;
+}
+
+/* Tap-to-reveal boxes (no link inside): iOS Safari only emulates :hover on
+   elements it considers clickable, so mark them as such and drop the focus ring. */
+.project-box--tappable {
+    cursor: pointer;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .project-box__lang {
