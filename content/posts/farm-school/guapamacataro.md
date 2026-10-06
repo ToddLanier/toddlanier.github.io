@@ -1,6 +1,6 @@
 ---
 title: Guapamacataro
-order: 5
+order: 50
 image: /uploads/guapamacataro-thumb.png
 asset: https://guapamacataro.org/team/
 ---

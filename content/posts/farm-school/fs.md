@@ -1,6 +1,6 @@
 ---
 title: f/s 
-order: 1
+order: 10
 image: /uploads/fs-loop.png
 asset:
 ---

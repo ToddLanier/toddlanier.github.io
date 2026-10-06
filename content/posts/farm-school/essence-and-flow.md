@@ -1,6 +1,6 @@
 ---
 title: ESSÊNCIA & FLUXO
-order: 4
+order: 40
 image: /uploads/essence-and-flow-thumb.png
 asset: /pdfs/essenciaefluxo_2026final_spreads.pdf
 ---

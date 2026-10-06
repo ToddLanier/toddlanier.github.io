@@ -1,6 +1,6 @@
 ---
 title: "pARTage exhibition: Global Warming (Mauritius)"
-order: 7
+order: 70
 image: /uploads/fs-7-partage.jpg
 buttons:
   - title: exhibition
