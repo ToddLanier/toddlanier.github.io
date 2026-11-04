@@ -24,6 +24,20 @@
 
         {{ .Content }}
 
+        {{ with .Params.boxes }}
+        <div class="project-boxes">
+            {{ range . }}
+                {{ if .asset }}
+                <a class="project-box"{{ with .image }} style="background-image: url('{{ . | relURL }}');"{{ end }} href="{{ .asset }}"{{ partial "link-attrs.html" .asset | safeHTMLAttr }} title="{{ .title }}">
+                    <div></div>
+                </a>
+                {{ else }}
+                <div class="project-box"{{ with .image }} style="background-image: url('{{ . | relURL }}');"{{ end }}></div>
+                {{ end }}
+            {{ end }}
+        </div>
+        {{ end }}
+
     </div>
 
 {{ end }}
