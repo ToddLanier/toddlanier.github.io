@@ -317,7 +317,7 @@ menu .list-project a {
     padding: 0.5em;
 }
 
-/* Single title-only overlay (emk no-asset boxes) */
+/* Single title-only overlay (emk boxes) */
 .project-box__title-only,
 .project-box__title-only:first-child {
     border-right: none;
@@ -669,6 +669,11 @@ body.fs-mode .content .project-boxes {
 
 body.fs-mode .content .project-box {
     margin: 0 0 1.5em 0;
+}
+
+/* Boxes without a link keep their border on hover */
+body.fs-mode .content div.project-box:hover {
+    border-color: var(--box-border);
 }
 
 /* MY ART WORLD */

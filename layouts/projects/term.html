@@ -47,6 +47,12 @@
                             <span class="project-box__lang project-box__caption">{{ .Params.hover_text }}</span>
                         </div>
                     </a>
+            {{ else if and $isEmk .Params.asset }}
+                    <a class="project-box project-box--multilingual" style="background-image: url('{{ .Params.image | relURL }}');" href="{{ .Params.asset }}"{{ partial "link-attrs.html" .Params.asset | safeHTMLAttr }} title="{{ .Title }}">
+                        <div class="project-box__overlay">
+                            <span class="project-box__lang project-box__title-only">{{ .Title }}</span>
+                        </div>
+                    </a>
             {{ else if .Params.asset }}
                     <a class="project-box" style="background-image: url('{{ .Params.image | relURL }}');" href="{{ .Params.asset }}"{{ partial "link-attrs.html" .Params.asset | safeHTMLAttr }} title="{{ .Title }}">
                         <div></div>

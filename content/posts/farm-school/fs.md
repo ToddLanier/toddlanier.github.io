@@ -5,6 +5,8 @@ image: /uploads/fs-loop.png
 asset:
 boxes:
   - image: /emk-slices/emk_1_1_top-left.png
+    asset: https://elmejorkarate.substack.com/p/1
+    title: 
   - image: /emk-slices/emk_1_2_top-center.png
   - image: /emk-slices/emk_1_3_top-right.png
   - image:
