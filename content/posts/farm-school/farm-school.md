@@ -2,5 +2,5 @@
 title: FARM/SCHOOL
 order: 80
 image: /uploads/fs-famschool.png
-asset: /pdfs/farmschoolart-mockup.pdf
+asset: https://farmschool.art/
 ---
