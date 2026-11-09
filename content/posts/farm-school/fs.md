@@ -8,6 +8,8 @@ boxes:
     asset: https://elmejorkarate.substack.com/p/1
     title: 
   - image: /emk-slices/emk_1_2_top-center.png
+    asset: https://elmejorkarate.substack.com/p/2
+    title: 
   - image: /emk-slices/emk_1_3_top-right.png
   - image:
   - image:
